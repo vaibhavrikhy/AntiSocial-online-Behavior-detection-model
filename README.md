@@ -56,7 +56,7 @@ By leveraging multiple deep-learning paradigms, this project elevates detection 
    ```bash
    ```
 
-git clone [https://github.com/USERNAME/AntiSocial-online-Behavior-detection-model.git](https://github.com/USERNAME/AntiSocial-online-Behavior-detection-model.git)
+git clone [https://github.com/anirudhavadhani70/AntiSocial-online-Behavior-detection-model.git](https://github.com/USERNAME/AntiSocial-online-Behavior-detection-model.git)
 cd AntiSocial-online-Behavior-detection-model
 
 ````
@@ -141,11 +141,6 @@ Please ensure all new code is covered by appropriate tests and add/update docume
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
-
-## 📬 Contact
-Maintainer: **Your Name**
-- Email: youremail@example.com
-- GitHub: [@USERNAME](https://github.com/USERNAME)
 
 Feel free to open issues or reach out for discussions!
 
