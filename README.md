@@ -130,29 +130,9 @@ Get up and running in minutes:
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes (`git commit -m 'Add feature'`).
-4. Push to your branch (`git push origin feature-name`).
-5. Open a Pull Request.
-
-Please ensure all new code is covered by appropriate tests and add/update documentation as needed.
-
----
 
 ## 📝 License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
-
-## 📬 Contact
-
-Maintainer: **Your Name**
-
-* Email: [youremail@example.com](mailto:youremail@example.com)
-* GitHub: [@USERNAME](https://github.com/USERNAME)
-
-Feel free to open issues or reach out for discussions!
