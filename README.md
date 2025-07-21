@@ -54,8 +54,6 @@ By leveraging multiple deep-learning paradigms, this project elevates detection 
 1. **Clone the repo**
 
    ```bash
-   ```
-
 git clone [https://github.com/anirudhavadhani70/AntiSocial-online-Behavior-detection-model.git](https://github.com/USERNAME/AntiSocial-online-Behavior-detection-model.git)
 cd AntiSocial-online-Behavior-detection-model
 
