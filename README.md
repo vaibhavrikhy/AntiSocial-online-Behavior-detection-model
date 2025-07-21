@@ -120,11 +120,6 @@ python src/predict.py --model models/bert\_finetune.ckpt --text "Your sample tex
 
 ---
 
-## 📊 Architecture Diagram
-
-![Hybrid Model Architecture](assets/architecture.png)
-
----
 
 ## 📝 License
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
@@ -133,4 +128,3 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 Feel free to open issues or reach out for discussions!
 
-```
