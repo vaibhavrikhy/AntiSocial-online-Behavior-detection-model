@@ -51,78 +51,103 @@ By leveraging multiple deep-learning paradigms, this project elevates detection 
 
 ## 📖 Quick Start
 
-1. **Clone the repo**
+Get up and running in minutes:
+
+1. **Clone the repository**
 
    ```bash
-git clone [https://github.com/anirudhavadhani70/AntiSocial-online-Behavior-detection-model.git](https://github.com/USERNAME/AntiSocial-online-Behavior-detection-model.git)
-cd AntiSocial-online-Behavior-detection-model
-
-````
-
-2. **Build & run with Docker** (optional)
-   ```bash
-docker build -t aob-detector .
-docker run --rm -v $(pwd)/data:/app/data aob-detector python src/train.py --config configs/cnn_rnn.yaml
-````
-
-3. **Or install dependencies**
-
-   ```bash
+   git clone https://github.com/anirudhavadhani70/AntiSocial-online-Behavior-detection-model.git
+   cd AntiSocial-online-Behavior-detection-model
    ```
 
-pip install -r requirements.txt
+2. **Build & run with Docker** (optional)
 
-````
+   ```bash
+   docker build -t aob-detector .
+   docker run --rm -v "$(pwd)/data:/app/data" aob-detector \
+     python src/train.py --config configs/cnn_rnn.yaml
+   ```
+
+3. **Or install dependencies locally**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 4. **Prepare your data**
+
    ```bash
-python src/preprocess.py \
-  --input data/raw/dataset.csv \
-  --output data/processed/
-````
+   python src/preprocess.py \
+     --input data/raw/dataset.csv \
+     --output data/processed/
+   ```
 
 5. **Train a model**
 
    ```bash
+   python src/train.py --config configs/bert_finetune.yaml
    ```
 
-python src/train.py --config configs/bert\_finetune.yaml
-
-````
-
 6. **Evaluate performance**
+
    ```bash
-python src/evaluate.py --checkpoint models/bert_finetune.ckpt --data data/processed/test.csv
-````
+   python src/evaluate.py \
+     --checkpoint models/bert_finetune.ckpt \
+     --data data/processed/test.csv
+   ```
 
 7. **Run inference**
 
    ```bash
+   python src/predict.py \
+     --model models/bert_finetune.ckpt \
+     --text "Your sample text here"
    ```
-
-python src/predict.py --model models/bert\_finetune.ckpt --text "Your sample text here"
-
-```
 
 ---
 
 ## 📈 Benchmark Results
-| Model               | Accuracy | Precision | Recall | F1‑Score |
-|---------------------|---------:|----------:|-------:|---------:|
-| CNN                 |    0.87  |     0.85  |   0.84 |    0.84  |
-| Bi-LSTM             |    0.91  |     0.90  |   0.89 |    0.89  |
-| CNN + LSTM (Hybrid) |    0.92  |     0.91  |   0.90 |    0.90  |
-| BERT (fine-tuned)   | **0.94**| **0.93**  |**0.92**|**0.92**  |
+
+| Model               | Accuracy | Precision |   Recall | F1‑Score |
+| ------------------- | -------: | --------: | -------: | -------: |
+| CNN                 |     0.87 |      0.85 |     0.84 |     0.84 |
+| Bi-LSTM             |     0.91 |      0.90 |     0.89 |     0.89 |
+| CNN + LSTM (Hybrid) |     0.92 |      0.91 |     0.90 |     0.90 |
+| BERT (fine-tuned)   | **0.94** |  **0.93** | **0.92** | **0.92** |
 
 *Transformer-based models lead the pack, demonstrating superior nuance in detecting abusive patterns.*
 
 ---
 
+## 📊 Architecture Diagram
+
+![Hybrid Model Architecture](assets/architecture.png)
+
+---
+
+## 🤝 Contributing
+
+1. Fork the repository.
+2. Create a feature branch (`git checkout -b feature-name`).
+3. Commit your changes (`git commit -m 'Add feature'`).
+4. Push to your branch (`git push origin feature-name`).
+5. Open a Pull Request.
+
+Please ensure all new code is covered by appropriate tests and add/update documentation as needed.
+
+---
 
 ## 📝 License
+
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Feel free to open issues or reach out for discussions!
+## 📬 Contact
 
+Maintainer: **Your Name**
+
+* Email: [youremail@example.com](mailto:youremail@example.com)
+* GitHub: [@USERNAME](https://github.com/USERNAME)
+
+Feel free to open issues or reach out for discussions!
