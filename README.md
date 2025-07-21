@@ -104,6 +104,11 @@ Get up and running in minutes:
      --text "Your sample text here"
    ```
 
+8. **Access full code and notebooks**
+
+   Visit the Google Drive folder for all scripts, notebooks, and resources:
+   [https://drive.google.com/drive/folders/1SfbAXuhPRcOSEK1spQ\_gqWAIjdIuc6RK?usp=drive\_link](https://drive.google.com/drive/folders/1SfbAXuhPRcOSEK1spQ_gqWAIjdIuc6RK?usp=drive_link)
+
 ---
 
 ## 📈 Benchmark Results
